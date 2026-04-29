@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0; /* keep this reset */
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0; 
+  padding: 0; 
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.btn {
+  background: #2e7d32;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.events {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+
+
+.events h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.event-card {
+  display: flex;
+  background: #fff;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex-direction: column; /* keep vertical layout inside each card */
+}
+
+.event-card img {
+  width: 250px;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 1rem;
+}
+.event-info p {
+  margin: 0;
+  margin-bottom: 2px; /* tiny gap if needed */
+}
+
+.event-info h2 {
+  
+  margin: 0;
+  margin-bottom: 2px; /* tiny gap if needed */
+
+}
+.event-card img {
+  height: 400px;
+  width: 600px;
+  object-fit: cover; /* keeps proportions nicely */
+}
+
+.more-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #2e7d32;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.more-btn:hover {
+  background: #1b5e20;
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    flex-direction: column;
+  }
+
+  .event-card img {
+    width: 100%;
+  }
+}
